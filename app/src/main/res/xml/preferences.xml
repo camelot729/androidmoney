@@ -48,10 +48,10 @@
         android:icon="@null"
         android:key="@string/pref_security"
         android:title="@string/preferences_security" />
-    <Preference
-        android:icon="@null"
-        android:key="@string/pref_database"
-        android:title="@string/database" />
+    <!--<Preference-->
+        <!--android:icon="@null"-->
+        <!--android:key="@string/pref_database"-->
+        <!--android:title="@string/database" />-->
     <Preference
         android:icon="@null"
         android:key="@string/pref_donate"

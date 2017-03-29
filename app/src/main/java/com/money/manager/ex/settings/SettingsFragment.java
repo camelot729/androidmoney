@@ -132,18 +132,20 @@ public class SettingsFragment
             });
         }
 
+
+        //database
         final Preference databasesPreference = findPreference(getString(PreferenceConstants.PREF_DATABASE));
-        if (databasesPreference != null) {
-            databasesPreference.setIcon(uiHelper.getIcon(GoogleMaterial.Icon.gmd_storage)
-                    .color(uiHelper.getSecondaryTextColor()));
-            databasesPreference.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
-                @Override
-                public boolean onPreferenceClick(Preference preference) {
-                    startActivity(new Intent(getActivity(), DatabaseSettingsActivity.class));
-                    return true;
-                }
-            });
-        }
+//        if (databasesPreference != null) {
+//            databasesPreference.setIcon(uiHelper.getIcon(GoogleMaterial.Icon.gmd_storage)
+//                    .color(uiHelper.getSecondaryTextColor()));
+//            databasesPreference.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+//                @Override
+//                public boolean onPreferenceClick(Preference preference) {
+//                    startActivity(new Intent(getActivity(), DatabaseSettingsActivity.class));
+//                    return true;
+//                }
+//            });
+//        }
 
         // Synchronisation
         final Preference syncPreference = findPreference(getString(R.string.pref_synchronization));

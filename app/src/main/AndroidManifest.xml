@@ -229,9 +229,9 @@
         <activity
             android:name=".settings.SecuritySettingsActivity"
             android:label="@string/preferences_security" />
-        <activity
-            android:name=".settings.DatabaseSettingsActivity"
-            android:label="@string/database" />
+        <!--<activity-->
+            <!--android:name=".settings.DatabaseSettingsActivity"-->
+            <!--android:label="@string/database" />-->
         <activity
             android:name=".settings.SyncPreferencesActivity"
             android:label="@string/synchronization" />

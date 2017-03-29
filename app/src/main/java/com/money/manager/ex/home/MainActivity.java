@@ -820,8 +820,9 @@ public class MainActivity
         childItems.add(null);
 
         // Open Database. Display the recent db list.
-        ArrayList<DrawerMenuItem> childDatabases = getRecentDatabasesDrawerMenuItems();
-        childItems.add(childDatabases);
+
+//        ArrayList<DrawerMenuItem> childDatabases = getRecentDatabasesDrawerMenuItems();
+//        childItems.add(childDatabases);
 
         // Synchronization
         if (new SyncManager(this).isActive()) {
@@ -1004,10 +1005,10 @@ public class MainActivity
                         .color(iconColor)));
 
         // Open database
-        menuItems.add(new DrawerMenuItem().withId(R.id.menu_open_database)
-                .withText(getString(R.string.open_database))
-                .withIconDrawable(uiHelper.getIcon(GoogleMaterial.Icon.gmd_folder_open)
-                        .color(iconColor)));
+//        menuItems.add(new DrawerMenuItem().withId(R.id.menu_open_database)
+//                .withText(getString(R.string.open_database))
+//                .withIconDrawable(uiHelper.getIcon(GoogleMaterial.Icon.gmd_folder_open)
+//                        .color(iconColor)));
 
         // Cloud synchronize
         if (new SyncManager(this).isActive()) {
